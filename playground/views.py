@@ -18,5 +18,11 @@ def say_hello(request):
 
     # return HttpResponse("Hello World")
     
-    return render(request, 'hello.html')
+    # return render(request, 'hello.html')
+    
+    # we can also pas parameters to the template using dictionary
+    # my_dict = {'name':"John", "age":30}
+    
+    return render(request, 'hello.html', {'name':"John", "age":30})
+    
 
