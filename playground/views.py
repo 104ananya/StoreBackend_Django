@@ -16,5 +16,7 @@ def say_hello(request):
     # 2. manipulate data / Transform
     # 3. Send email
 
-    return HttpResponse("Hello World")
+    # return HttpResponse("Hello World")
+    
+    return render(request, 'hello.html')
 
